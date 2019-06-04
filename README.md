@@ -7,6 +7,7 @@ The whole test will be done through an api endpoint that can be hit by using Pos
 
 ## Running the app
 > composer install
+>
 > php artisan serve 
 > 
 > \>Laravel development server started: <http://127.0.0.1:8000>
