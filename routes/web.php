@@ -12,3 +12,4 @@
 */
 
 Route::get('/{type?}/{numberOfAnimals?}', 'Controller@animals');
+Route::post('/buy', 'Controller@buy');
