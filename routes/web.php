@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/{type?}/{numberOfAnimals?}', 'Controller@animals');
+Route::get('/', 'Controller@repos');
 Route::post('/buy', 'Controller@buy');
