@@ -1,0 +1,19 @@
+
+services:
+  # PHP/Apache Service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    container_name: laravel-app
+    ports:
+      - "8000:80"
+    working_dir: /var/www/html
+    networks:
+      - app-network
+    volumes:
+      - .:/var/www/html
+networks:
+  app-network:
+    driver: bridge
